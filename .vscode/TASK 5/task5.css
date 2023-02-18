@@ -3,6 +3,8 @@ body {
     padding: 5% 20%;
     text-align: center;
     color: aliceblue;
+    letter-spacing: 10px;
+    overflow:hidden;
 }
 
 #par {

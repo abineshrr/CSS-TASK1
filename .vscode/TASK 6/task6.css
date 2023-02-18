@@ -33,22 +33,30 @@ padding: 30px
 form {
     color:aliceblue;
     text-align: start;
-    font-weight: 400;
+    font-weight: 20px;
+    letter-spacing: 4px;
+
    
 }
 
-input {
+input#full-width {
+    width: 100%;
+}
+
+input, select {
+    display: inline-block;
     background-color: rgba(207, 212, 216, 0);
    text-align: center;
     border: 1px solid white;
     color: aliceblue;
     height: 30px; 
-       
+    
     
 }
 
 label {
 margin: 50px;display: block;
+font-size: large;
 }
 
 select {
@@ -60,8 +68,28 @@ select {
 button {
     background-color: blue;
     text-align: center;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    color: aliceblue;
 }
 
 #reset {
     background-color: darkgoldenrod;
 }
+
+
+div#place-order {
+    display: flex;
+    justify-content: flex-start;
+} 
+.clss-div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+
+
+
