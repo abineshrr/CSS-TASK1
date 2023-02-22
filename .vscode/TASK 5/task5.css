@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(24, 1, 1);
+    padding: 5% 20%;
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 10px;
+    overflow:hidden;
+}
+
+#par {
+    background-color: rgb(26, 255, 0);
+}
+.one {
+    height: 3.44%;
+    background-color: black;
+}
+
+.two {
+    height: 6.89%;
+    background-color: aqua;
+}
