@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 60px;
+    }
+
+    ol {
+      padding-left: 30%;
+    }
+
+    li {
+      font-size: 40px;
+    }
+  </style>
+  <body>
+    <h1>My family members</h1>
+
+    <ol>
+      <li onclick="color(this)">Reji</li>
+      <li onclick="color(this)">Joyal</li>
+      <li onclick="color(this)">Vijin</li>
+      <li onclick="color(this)">Vijith</li>
+      <li onclick="color(this)">Prabin</li>
+      <li onclick="color(this)">Jebin</li>
+      <li onclick="color(this)">Jerush</li>
+      <li onclick="color(this)">Arun</li>
+      <li onclick="color(this)">Jino</li>
+      <li onclick="color(this)">Anu</li>
+    </ol>
+  </body>
+
+  <script>
+    let list = document.getElementsByTagName("li");
+    var array = [];
+    for (let i = 0; i < list.length; i++) {
+      array.push(list[i].innerText);
+    }
+    function color(text) {
+      let int = array.indexOf(text.innerText);
+      if (int % 2 == 0) {
+        text.style.color = "red";
+      }
+    }
+   
+  </script>
+</html>

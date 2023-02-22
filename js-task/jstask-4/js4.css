@@ -1,0 +1,15 @@
+h1, body {
+    text-align: center;
+}
+
+ul {
+    margin: 50px;
+    font-size: 30px;
+    padding-left: 250px;
+    
+}
+
+li {
+    width: 200px;
+   
+}

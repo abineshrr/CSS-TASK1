@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tskone.css" />
+    <title>Alert</title>
+  </head>
+    <body>
+    <div id="parent">
+      <button  onclick="getAlert(this)">Hey!</button>
+      <button  onclick="getAlert(this)">Hello!</button>
+      <button  onclick="getAlert(this)">Welocome</button>
+      <button  onclick="getAlert(this)">
+        Have a great time
+      </button>
+    </div>
+
+    <script>
+      content = "";
+      function getAlert(text) {
+        let main = text.innerText;
+        content += main + '\n';
+        alert(content);
+      }
+    </script>
+  </body>
+</html>

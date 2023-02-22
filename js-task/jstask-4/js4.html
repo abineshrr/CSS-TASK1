@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="js4.css" />
+  </head>
+  <body>
+    <h1>My friends list</h1>
+    <ul id="ordered">
+      <li onclick="firstLet(this)">Reji</li>
+      <li onclick="firstLet(this)">Arun</li>
+      <li onclick="firstLet(this)">Jino</li>
+      <li onclick="firstLet(this)">Aathil</li>
+      <li onclick="firstLet(this)">Manee</li>
+      <li onclick="firstLet(this)">Aswath</li>
+      <li onclick="firstLet(this)">Eben</li>
+      <li onclick="firstLet(this)">Prabin</li>
+      <li onclick="firstLet(this)">Muthu</li>
+      <li onclick="firstLet(this)">Ignatius</li>
+    </ul>
+  </body>
+  <script>
+    function firstLet(text) {
+      let name = text.innerText;
+      let firstLetter = name.charAt(0);
+      //console.log(firstLetter)
+      if (
+        firstLetter == "A" ||
+        firstLetter == "E" ||
+        firstLetter == "I" ||
+        firstLetter == "O" ||
+        firstLetter == "U") {
+          text.style.backgroundColor="red"
+      }else {
+        text.style.backgroundColor="green"
+      }
+    }
+  </script>
+</html>
