@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        height: 50px;
+        width: 100px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin-top: 50px;
+        position: absolute;
+        left: calc((100% - 100px) / 2);
+      }
+
+      table,
+      tr {
+        border: 1px solid black;
+      }
+
+      table {
+        width: 250px;
+        height: 350px;
+        border: 1px solid black;
+        position: absolute;
+        top: 30%;
+        left: calc((100% - 250px) / 2);
+      }
+
+      td, th{
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="butn-el" onclick="colorChange()">ENTER</button>
+    <div>
+      <table>
+        <tr>
+            <th>Color List</th>
+            <th>Count</th>
+        </tr>
+        <tr>
+          <td>Purple</td>
+          <td id="purple">0</td>
+      </tr>
+        <tr>
+            <td>Red</td>
+            <td id="red">0</td>
+        </tr>
+        <tr>
+            <td>Green</td>
+            <td id="green">0</td>
+        </tr>
+        
+        <tr>
+            <td>Pink</td>
+            <td id="pink">0</td>
+        </tr>
+        <tr>
+            <td>Brown</td>
+            <td id="brown">0</td>
+        </tr>
+        
+        <tr>
+            <td>Orchid</td>
+            <td id="orchid">0</td>
+        </tr>
+        <tr>
+            <td>Gray</td>
+            <td id="gray">0</td>
+        </tr>
+        <tr>
+            <td>Violet</td>
+            <td id="violet">0</td>
+        </tr>
+        <tr>
+          <td>Blue</td>
+          <td id="blue">0</td>
+      </tr>
+      <tr>
+          <td>Yellow</td>
+          <td id="yellow">0</td>
+      </tr>
+    </table>
+</body>
+
+  <script>
+    let colorArray = ["purple", "red", "green", "pink", "brown", "orchid", "gray", "violet", "blue", "yellow"];
+     
+    function colorChange() {
+      document.body.style.backgroundColor = colorArray[Math.floor(Math.random() * colorArray.length)];
+      console.log(document.body.style.backgroundColor)
+
+     if (document.body.style.backgroundColor == "purple") {
+     let count = document.getElementById("purple").innerHTML ;
+      count =parseInt(count) + 1
+     document.getElementById("purple").innerHTML = count
+     }
+     else if (document.body.style.backgroundColor == "red") {
+      let count = document.getElementById("red").innerHTML ;
+      count =parseInt(count) + 1
+     document.getElementById("red").innerHTML = count
+     }
+     else if (document.body.style.backgroundColor == "green") {
+      let count = document.getElementById("green").innerHTML ;
+      count =parseInt(count) + 1
+     document.getElementById("green").innerHTML = count
+     }
+     else if (document.body.style.backgroundColor == "pink") {
+      let count = document.getElementById("pink").innerHTML ;
+      count =parseInt(count) + 1
+     document.getElementById("pink").innerHTML = count
+     }
+     else if (document.body.style.backgroundColor == "brown") {
+      let count = document.getElementById("brown").innerHTML ;
+      count =parseInt(count) + 1
+     document.getElementById("brown").innerHTML = count
+     }
+     else if (document.body.style.backgroundColor == "orchid") {
+      let count = document.getElementById("orchid").innerHTML ;
+      count =parseInt(count) + 1
+     document.getElementById("orchid").innerHTML = count
+     }
+     else if (document.body.style.backgroundColor == "gray") {
+      let count = document.getElementById("gray").innerHTML ;
+      count =parseInt(count) + 1
+     document.getElementById("gray").innerHTML = count
+     }
+     else if (document.body.style.backgroundColor == "violet") {
+      let count = document.getElementById("violet").innerHTML ;
+      count =parseInt(count) + 1
+     document.getElementById("violet").innerHTML = count
+     }
+     else if (document.body.style.backgroundColor == "blue") {
+      let count = document.getElementById("blue").innerHTML ;
+      count =parseInt(count) + 1
+     document.getElementById("blue").innerHTML = count
+     }
+     else if (document.body.style.backgroundColor == "yellow") {
+      let count = document.getElementById("yellow").innerHTML ;
+      count =parseInt(count) + 1
+     document.getElementById("yellow").innerHTML = count
+     }
+     
+    }
+  </script>
+</html>
