@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        padding: 0 5px 5px 0;
+      }
+
+      #parent {
+        width: 100%;
+        height: 100%;
+        background-color: l;
+        display: flex;
+      }
+
+      #child-one {
+        width: 20%;
+        height: 98%;
+        background-color: aqua;
+        margin: 5px 0 0 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #child-two {
+        width: 80%;
+        height: 98%;
+        background-color: aliceblue;
+        margin: 5px 10px 0 0;
+      }
+
+      label {
+        display: block;
+        margin: 10px;
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child-one" class="child">
+         <label ><input type="radio" onclick="black()" >Black</label>
+        <label ><input type="radio" onclick="green()">Green</label>
+        <label ><input type="radio" onclick="red()">Red</label>
+        <label ><input type="radio" onclick="orchid()">Orchid</label>
+        <label ><input type="radio" onclick="purple()">Purple</label>
+        <label ><input type="radio" onclick="yellow()">Yellow</label>
+        <label ><input type="radio" onclick="gray()">Gray</label>
+        <label ><input type="radio" onclick="blue()">Blue</label>
+        <label ><input type="radio" onclick="brown()">Brown</label>
+        <label ><input type="radio" onclick="lightCoral()">Lightcoral</label> -->
+
+        
+      </div>
+      <div id="child-two"></div>
+    </div>
+  </body>
+<script src="jstask.js"></script>
+  
+  
+</html>

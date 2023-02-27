@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="jstask.css" />
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child-one"></div>
+      <div id="child-two">
+        <div id="grand-one" class="grand">
+          <div class="child-grand" onclick="input(this)">1</div>
+          <div class="child-grand" onclick="input(this)">2</div>
+          <div class="child-grand" onclick="input(this)">3</div>
+          <div class="child-grand" onclick="input(this)">4</div>
+          <div class="child-grand" onclick="input(this)">5</div>
+          <div class="child-grand" onclick="input(this)">6</div>
+          <div class="child-grand" onclick="input(this)">7</div>
+          <div class="child-grand" onclick="input(this)">8</div>
+          <div class="child-grand" onclick="input(this)">9</div>
+          <div class="child-grand" onclick="input(this)">0</div>
+          <div class="child-grand" id="backspace" onclick="backspace()">
+            Backspace
+          </div>
+        </div>
+        <div id="grand-two" class="grand">
+          <div class="child-grand" onclick="input(this)">Q</div>
+          <div class="child-grand" onclick="input(this)">W</div>
+          <div class="child-grand" onclick="input(this)">E</div>
+          <div class="child-grand" onclick="input(this)">R</div>
+          <div class="child-grand" onclick="input(this)">T</div>
+          <div class="child-grand" onclick="input(this)">Y</div>
+          <div class="child-grand" onclick="input(this)">U</div>
+          <div class="child-grand" onclick="input(this)">I</div>
+          <div class="child-grand" onclick="input(this)">O</div>
+          <div class="child-grand" onclick="input(this)">P</div>
+        </div>
+        <div id="grand-three" class="grand">
+          <div class="child-grand" onclick="capsLock()">CapsLock</div>
+          <div class="child-grand" onclick="input(this)">A</div>
+          <div class="child-grand" onclick="input(this)">S</div>
+          <div class="child-grand" onclick="input(this)">D</div>
+          <div class="child-grand" onclick="input(this)">F</div>
+          <div class="child-grand" onclick="input(this)">G</div>
+          <div class="child-grand" onclick="input(this)">H</div>
+          <div class="child-grand" onclick="input(this)">J</div>
+          <div class="child-grand" onclick="input(this)">K</div>
+          <div class="child-grand" onclick="input(this)">L</div>
+        </div>
+        <div id="grand-four" class="grand">
+          <div class="child-grand" id="enter">Shift</div>
+          <div class="child-grand" onclick="input(this)">Z</div>
+          <div class="child-grand" onclick="input(this)">X</div>
+          <div class="child-grand" onclick="input(this)">C</div>
+          <div class="child-grand" onclick="input(this)">V</div>
+          <div class="child-grand" onclick="input(this)">B</div>
+          <div class="child-grand" onclick="input(this)">N</div>
+          <div class="child-grand" onclick="input(this)">M</div>
+          <div class="child-grand" id="enter" onclick="enter()">Enter</div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+  <script src="jstask.js"></script>
+</html>
